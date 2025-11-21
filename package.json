@@ -1,0 +1,20 @@
+{
+  "name": "everride",
+  "version": "1.0.0",
+  "description": "Test projekt til visning af Node",
+  "license": "ISC",
+  "author": "Greta",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}
