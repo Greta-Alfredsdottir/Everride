@@ -2,9 +2,10 @@
 import express from 'express';
 import { carRouter } from './routes/carRoutes.js';
 import { departmentRouter } from './routes/departmentRoutes.js';
+import dotenv from 'dotenv';
 
-const port = 4000;
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Kalder root med requst og response objekt
 app.get("/", (req, res) => {
@@ -31,10 +32,13 @@ app.get('/contact', (req, res) => {
 
 app.use((req,res) =>{
   res.send(`Kunne ikke finde siden`)
+  
 })
 
 app.listen(port, () => {
    console.log(`Express server kører på http://localhost:${port}`);
 });
+
+
 
  
